@@ -1,0 +1,89 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    .cta__info{
+        max-width: 55%;
+    }
+    .footer__info{
+        max-width: 48%;
+    }
+    .footer__info-text{
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .modal{
+        padding: 15px;
+    }
+    .modal-window{
+        margin: 0;
+    }
+    .modal-window--lg{
+        max-width: 100%;
+    }
+    .cta__title{
+        font-size: 30px;
+    }
+    .cta__info{
+        max-width: 100%;
+    }
+    .catalog__item{
+        width: 50%;
+    }
+    .order__form-col{
+        width: 100%;
+    }
+    .container--center-between{
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .order,
+    .info,
+    .catalog,
+    .characteristics,
+    .cta,
+    .footer{
+        padding: 30px 0;
+    }
+    .footer__info{
+        margin: 15px 0;
+    }
+    .contacts__text{
+        margin-top: 0;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .copyrights{
+        margin-top: 20px;
+    }
+    .cta__img{
+        width: 50%;
+        margin: 30px auto 0 auto;
+    }
+    .cta__btn{
+        margin: 30px auto 0 auto;
+    }
+    .cta__price{
+        font-size: 24px;
+    }
+    .cta__price span{
+        font-size: 36px;
+    }
+    .cta__list-item{
+        font-size: 18px;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+
+}
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
+
+}
