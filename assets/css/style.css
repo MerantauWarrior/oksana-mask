@@ -8,7 +8,7 @@ body{
     font-family: 'Fira Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing:grayscale;
-    color: #333333;
+    color: #333333;background-color: #f2efe8;
 }
 *{
     -webkit-box-sizing: border-box;
@@ -88,7 +88,8 @@ img{
 }
 .footer{
     padding: 65px 0 30px 0;
-    background-color: #f2f6fd;
+    background-color: #daccb2;
+    /*background-color: #f2f6fd;*/
     color: #333333;
 }
 .footer__info-text{
