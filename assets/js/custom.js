@@ -16,9 +16,9 @@ $( document ).ready(function() {
   });
   $('.modal').click(function(e){
     if(e.target == $('.modal')[0]){
+      $('body').removeClass('ovh');
       $('.modal').hide();
       $('.modal-window').hide();
-      $('body').removeClass('ovh');
     }
   });
 //  Catalog
@@ -42,6 +42,7 @@ $( document ).ready(function() {
     });
     request.done(function (response, textStatus, jqXHR) {
       form.find('input').val('');
+      $('body').removeClass('ovh');
       $('.modal').hide();
       $('.modal-window').hide();
     });
