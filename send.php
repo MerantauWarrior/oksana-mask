@@ -5,7 +5,7 @@
     $title = "Заявка с сайта Masks test" ; // заголовок(тема) письма
 
     $phone = htmlspecialchars($_POST["orderTel"]);
-    $categoty = htmlspecialchars($_POST["cat"]);
+    $categoty = htmlspecialchars($_POST["orderTitle"]);
     $qty = htmlspecialchars($_POST["qty"]);
 
     $mess = "<b>Дата и Время:</b> $dt <br>";

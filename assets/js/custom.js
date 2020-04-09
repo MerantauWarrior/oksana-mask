@@ -24,11 +24,10 @@ $( document ).ready(function() {
   $('.catalog__btn').click(function (e) {
     e.preventDefault();
     var title = $(this).data('title');
-    // $('#orderTitle').val(title);
-    $('.order .title div').text('на '+ title+' маски');
-    $('html, body').animate({
-      scrollTop: $('.order').offset().top
-    }, 1000);
+    $('#orderTitle').val(title);
+    $('body').addClass('ovh');
+    $('.modal').show();
+    $('.modal-window#order').show();
   });
 //  Forms
   $('form').on('submit', function (e) {
