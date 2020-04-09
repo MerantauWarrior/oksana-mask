@@ -23,7 +23,7 @@ $( document ).ready(function() {
   $('.catalog__btn').click(function (e) {
     e.preventDefault();
     var title = $(this).data('title');
-    $('#orderTitle').val(title);
+    // $('#orderTitle').val(title);
     $('.order .title div').text('на '+ title+' маски');
     $('html, body').animate({
       scrollTop: $('.order').offset().top
