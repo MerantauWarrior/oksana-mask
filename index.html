@@ -55,6 +55,7 @@
         </div>
         <div class="catalog__item-name">Стандартные</div>
         <div class="catalog__item-price">От 30 руб./шт.</div>
+        <a href="#" class="catalog__btn" data-title="Стандартные">Заказать</a>
       </div>
       <div class="catalog__item">
         <div class="catalog__item-img">
@@ -62,6 +63,7 @@
         </div>
         <div class="catalog__item-name">Медицинские</div>
         <div class="catalog__item-price">От 35 руб./шт.</div>
+        <a href="#" class="catalog__btn" data-title="Медицинские">Заказать</a>
       </div>
       <div class="catalog__item">
         <div class="catalog__item-img">
@@ -69,16 +71,15 @@
         </div>
         <div class="catalog__item-name">Тканевые</div>
         <div class="catalog__item-price">От 250 руб./шт.</div>
-        <div class="catalog__item-text">*в наличии множество<br>
-          дизайнов, актуальный сток<br>
-          высылает менеджер по звонку
-        </div>
+        <a href="#" class="catalog__btn" data-title="Тканевые">Заказать</a>
       </div>
       <div class="catalog__item">
         <div class="catalog__item-img">
           <img src="assets/img/cat-4.jpg" alt="">
         </div>
         <div class="catalog__item-name">Респираторные</div>
+        <div class="catalog__item-price">От 450 руб./шт.</div>
+        <a href="#" class="catalog__btn" data-title="Респираторные">Заказать</a>
       </div>
     </div>
   </div>
@@ -86,54 +87,38 @@
 
 <section class="order">
   <div class="container">
-    <h2 class="title">Оформление заявки</h2>
+    <h2 class="title">Оформление заявки <div></div></h2>
     <p class="title-after">Рассматриваем в течение 10 минут.</p>
     <form action="" method="get" class="order__form">
+      <input type="hidden" name="orderTitle" id="orderTitle">
       <div class="order__form-content">
-        <div class="order__form-cols">
-          <div class="order__form-col">
-            <div class="label-order">КАТЕГОРИЯ</div>
-            <div class="order__checkbox">
-              <input type="radio" name="cat" id="cat-1" value="Стандартные">
-              <label for="cat-1" class="label-checkbox">Стандартные</label>
-            </div>
-            <div class="order__checkbox">
-              <input type="radio" name="cat" id="cat-2" value="Медицинские">
-              <label for="cat-2" class="label-checkbox">Медицинские</label>
-            </div>
-            <div class="order__checkbox">
-              <input type="radio" name="cat" id="cat-3" value="Тканевые">
-              <label for="cat-3" class="label-checkbox">Тканевые</label>
-            </div>
-            <div class="order__checkbox">
-              <input type="radio" name="cat" id="cat-4" value="Респираторные">
-              <label for="cat-4" class="label-checkbox">Респираторные</label>
-            </div>
+        <div class="order__form-category">
+          <div class="label-order">КАТЕГОРИЯ</div>
+          <div class="order__checkbox">
+            <input type="radio" name="cat" id="cat-1" value="Стандартные">
+            <label for="cat-1" class="label-checkbox">Стандартные</label>
           </div>
-          <div class="order__form-col">
-            <div class="label-order">КОЛИЧЕСТВО</div>
-            <div class="order__checkbox">
-              <input type="radio" name="qty" id="qty-1" value="до 500 шт.">
-              <label for="qty-1" class="label-checkbox">до 500 шт.</label>
-            </div>
-            <div class="order__checkbox">
-              <input type="radio" name="qty" id="qty-2" value="до 5 000 шт.">
-              <label for="qty-2" class="label-checkbox">до 5 000 шт.</label>
-            </div>
-            <div class="order__checkbox">
-              <input type="radio" name="qty" id="qty-3" value="до 50 000 шт.">
-              <label for="qty-3" class="label-checkbox">до 50 000 шт.</label>
-            </div>
-            <div class="order__checkbox">
-              <input type="radio" name="qty" id="qty-4" value="более 50 000 шт.">
-              <label for="qty-4" class="label-checkbox">более 50 000 шт.</label>
-            </div>
+          <div class="order__checkbox">
+            <input type="radio" name="cat" id="cat-2" value="Медицинские">
+            <label for="cat-2" class="label-checkbox">Медицинские</label>
           </div>
+          <div class="order__checkbox">
+            <input type="radio" name="cat" id="cat-3" value="Тканевые">
+            <label for="cat-3" class="label-checkbox">Тканевые</label>
+          </div>
+          <div class="order__checkbox">
+            <input type="radio" name="cat" id="cat-4" value="Респираторные">
+            <label for="cat-4" class="label-checkbox">Респираторные</label>
+          </div>
+        </div>
+        <div class="order__form-row">
+          <label for="qty" class="label-order">КОЛИЧЕСТВО</label>
+          <input type="text" name="qty" id="qty" class="inp-order" placeholder="0">
         </div>
         <div class="order__form-row">
           <label for="orderTel" class="label-order">НОМЕР ТЕЛЕФОНА *</label>
           <input type="tel" name="orderTel" id="orderTel" class="inp-order" placeholder="" required>
-          <button class="btn-order" type="submit">УЗНАТЬ ЦЕНУ</button>
+          <button class="btn-order" type="submit">заказать</button>
           <div class="order__form-text">Нажимая кнопку, вы даете согласие на <a href="#policy"
                                                                                 class="js-modal">обработку
             персональных данных</a></div>
