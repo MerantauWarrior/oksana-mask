@@ -17,6 +17,7 @@ $( document ).ready(function() {
   $('.modal').click(function(e){
     if(e.target == $('.modal')[0]){
       $('.modal').hide();
+      $('body').removeClass('ovh');
     }
   });
 //  Catalog
