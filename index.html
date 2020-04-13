@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="assets/css/slick.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/media.css">
 </head>
@@ -31,32 +32,92 @@
     <h2 class="title">Каталог</h2>
     <div class="catalog__items">
       <div class="catalog__item">
-        <div class="catalog__item-img">
-          <img src="assets/img/cat-1.jpg" alt="">
+        <div class="catalog__item-imgs">
+          <div class="catalog__arrows catalog__arrows-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="catalog__arrows catalog__arrows-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="catalog__slider">
+            <div>
+              <img src="assets/img/cat-1.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-2.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-3.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-4.jpg" alt="">
+            </div>
+          </div>
         </div>
         <div class="catalog__item-name">Стандартные</div>
         <div class="catalog__item-price">От 30 руб./шт.</div>
         <a href="#" class="catalog__btn" data-title="Стандартные">Заказать</a>
       </div>
       <div class="catalog__item">
-        <div class="catalog__item-img">
-          <img src="assets/img/cat-2.jpg" alt="">
+        <div class="catalog__item-imgs">
+          <div class="catalog__arrows catalog__arrows-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="catalog__arrows catalog__arrows-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="catalog__slider">
+            <div>
+              <img src="assets/img/cat-1.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-2.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-3.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-4.jpg" alt="">
+            </div>
+          </div>
         </div>
         <div class="catalog__item-name">Медицинские</div>
         <div class="catalog__item-price">От 35 руб./шт.</div>
         <a href="#" class="catalog__btn" data-title="Медицинские">Заказать</a>
       </div>
       <div class="catalog__item">
-        <div class="catalog__item-img">
-          <img src="assets/img/cat-3.jpg" alt="">
+        <div class="catalog__item-imgs">
+          <div class="catalog__arrows catalog__arrows-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="catalog__arrows catalog__arrows-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="catalog__slider">
+            <div>
+              <img src="assets/img/cat-1.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-2.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-3.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-4.jpg" alt="">
+            </div>
+          </div>
         </div>
         <div class="catalog__item-name">Тканевые</div>
         <div class="catalog__item-price">От 250 руб./шт.</div>
         <a href="#" class="catalog__btn" data-title="Тканевые">Заказать</a>
       </div>
       <div class="catalog__item">
-        <div class="catalog__item-img">
-          <img src="assets/img/cat-4.jpg" alt="">
+        <div class="catalog__item-imgs">
+          <div class="catalog__arrows catalog__arrows-prev"><i class="fas fa-chevron-left"></i></div>
+          <div class="catalog__arrows catalog__arrows-next"><i class="fas fa-chevron-right"></i></div>
+          <div class="catalog__slider">
+            <div>
+              <img src="assets/img/cat-1.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-2.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-3.jpg" alt="">
+            </div>
+            <div>
+              <img src="assets/img/cat-4.jpg" alt="">
+            </div>
+          </div>
         </div>
         <div class="catalog__item-name">Респираторные</div>
         <div class="catalog__item-price">От 450 руб./шт.</div>
@@ -178,7 +239,7 @@
     <div class="modal-window__content">
       <form action="" method="get">
         <label for="modalTel" class="label-modal">Телефон <span>*</span></label>
-        <input type="tel" name="modalTel" id="modalTel" class="inp-modal">
+        <input type="tel" name="orderTel" id="modalTel" class="inp-modal">
         <button class="btn-modal" type="submit">Отправить заявку!</button>
       </form>
     </div>
@@ -205,6 +266,7 @@
 </div>
 
 <script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
 <script src="assets/js/jquery.maskedinput.min.js"></script>
 <script src="assets/js/custom.js"></script>
 </body>

@@ -27,7 +27,6 @@ require("sendgrid-php/sendgrid-php.php");
 $email = new \SendGrid\Mail\Mail(); 
 $email->setFrom("info@visaberi.ru", "Visaberi");
 $tos = [
-    "info@онлайнер24.рф" => "info@онлайнер24.рф",
     "boris117@yandex.ru" => "Example User3",
     "boris1488ss@gmail.com" => "Example User2"
 ];

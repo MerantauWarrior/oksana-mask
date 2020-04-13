@@ -223,8 +223,32 @@ img{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 100%;
+    max-width: 25%;
     text-align: center;
+}
+.catalog__item-imgs{
+    position: relative;
+    max-width: 100%;
+    padding: 0 20px;
+}
+.catalog__arrows{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    z-index: 9;
+}
+.catalog__arrows-prev{
+    left: 5px;
+}
+.catalog__arrows-next{
+    right: 5px;
+}
+.catalog__slider img{
+    margin: 0 auto;
+}
+.slick-slide{
+    outline: none;
 }
 .catalog__item-name{
     margin-top: 10px;

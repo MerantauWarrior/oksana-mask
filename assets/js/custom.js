@@ -30,6 +30,18 @@ $( document ).ready(function() {
     $('.modal').show();
     $('.modal-window#order').show();
   });
+
+  $('.catalog__slider').each(function () {
+    var slider = $(this);
+    slider.slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      prevArrow: slider.parent().find('.catalog__arrows-prev'),
+      nextArrow: slider.parent().find('.catalog__arrows-next')
+    });
+  });
 //  Forms
   $('form').on('submit', function (e) {
     e.preventDefault();
