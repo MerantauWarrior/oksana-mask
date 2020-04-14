@@ -1,4 +1,24 @@
 $( document ).ready(function() {
+//  Catalog js
+  $('.catalog__slider').each(function () {
+    var slider = $(this);
+    slider.slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      prevArrow: slider.parent().find('.catalog__arrows-prev'),
+      nextArrow: slider.parent().find('.catalog__arrows-next')
+    });
+  });
+  $('.catalog__btn').click(function (e) {
+    e.preventDefault();
+    var title = $(this).data('title');
+    $('#orderTitle').val(title);
+    $('body').addClass('ovh');
+    $('.modal').show();
+    $('.modal-window#order').show();
+  });
   //phone mask
   $('input[type="tel"]').mask("+7(999) 999-9999");
 //  Modals
@@ -20,27 +40,6 @@ $( document ).ready(function() {
       $('.modal').hide();
       $('.modal-window').hide();
     }
-  });
-//  Catalog
-  $('.catalog__btn').click(function (e) {
-    e.preventDefault();
-    var title = $(this).data('title');
-    $('#orderTitle').val(title);
-    $('body').addClass('ovh');
-    $('.modal').show();
-    $('.modal-window#order').show();
-  });
-
-  $('.catalog__slider').each(function () {
-    var slider = $(this);
-    slider.slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      prevArrow: slider.parent().find('.catalog__arrows-prev'),
-      nextArrow: slider.parent().find('.catalog__arrows-next')
-    });
   });
 //  Forms
   $('form').on('submit', function (e) {
