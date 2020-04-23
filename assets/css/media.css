@@ -26,7 +26,7 @@
         max-width: 100%;
     }
     .cta__title{
-        font-size: 30px;
+        font-size: 28px;
     }
     .cta__info{
         max-width: 100%;
@@ -84,6 +84,13 @@
     .order__form-category{
         flex-direction: column;
         align-items: flex-start;
+    }
+    .catalog__item-imgs{
+        margin-top: 40px;
+    }
+    .footer__info-text{
+        margin-bottom: 20px;
+        text-align: center;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
