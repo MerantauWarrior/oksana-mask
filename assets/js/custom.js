@@ -11,7 +11,7 @@ $( document ).ready(function() {
       nextArrow: slider.parent().find('.catalog__arrows-next')
     });
   });
-  $('.catalog__btn').click(function (e) {
+  $('.js-order').click(function (e) {
     e.preventDefault();
     var title = $(this).data('title');
     $('#orderTitle').val(title);

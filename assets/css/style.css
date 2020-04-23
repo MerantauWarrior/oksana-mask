@@ -141,7 +141,8 @@ img{
     font-size: 56px;
     font-weight: 400;
 }
-.cta__info{
+.cta__info,
+.cta__imgs{
     width: 100%;
     max-width: 450px;
 }
@@ -226,6 +227,7 @@ img{
     width: 100%;
     max-width: 25%;
     text-align: center;
+		margin-bottom: 15px;
 }
 .catalog__item-imgs{
     position: relative;

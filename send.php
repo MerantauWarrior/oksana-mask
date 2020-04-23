@@ -7,6 +7,8 @@
     $phone = htmlspecialchars($_POST["orderTel"]);
     $categoty = htmlspecialchars($_POST["orderTitle"]);
     $uName = htmlspecialchars($_POST["uName"]);
+    $uQty = htmlspecialchars($_POST["uQty"]);
+    $uAddress = htmlspecialchars($_POST["uAddress"]);
 
     $mess = "<b>Дата и Время:</b> $dt <br>";
 
@@ -18,6 +20,12 @@
     }		
     if ($categoty) {
         $mess .= "<b>Категория:</b> $categoty<br>";
+    }	
+    if ($uQty) {
+        $mess .= "<b>Количество:</b> $uQty<br>";
+    }
+    if ($uAddress) {
+        $mess .= "<b>Адрес доставки:</b> $uAddress<br>";
     }
     
     
